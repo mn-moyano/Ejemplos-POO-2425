@@ -1,7 +1,7 @@
 import os
 
 def mostrar_codigo(ruta_script):
-    # Asegúrate de que la ruta al script es absoluta
+    # Asegurarse de que la ruta al script es absoluta
     ruta_script_absoluta = os.path.abspath(ruta_script)
     try:
         with open(ruta_script_absoluta, 'r') as archivo:
@@ -14,7 +14,7 @@ def mostrar_codigo(ruta_script):
 
 
 def mostrar_menu():
-    # Define la ruta base donde se encuentra el dashboard.py
+    # Definir la ruta base donde se encuentra el dashboard.py
     ruta_base = os.path.dirname(__file__)
 
     opciones = {
@@ -29,11 +29,11 @@ def mostrar_menu():
         '9': 'UNIDAD 2/clases_objetos_herencia_polimorf_encapsulacion.py',
         '10': 'UNIDAD 2/constructor y destructor.py',
         '11': 'UNIDAD 2/Identificadores y tipos de datos.py'
-    } # Agrega aquí el resto de las rutas de los scripts
+    } # Agregar todas las rutas de los scripts
 
     while True:
         print("\n********Menu Principal - Dashboard*************")
-        # Imprime las opciones del menú
+        # Imprimir las opciones del menú
         for key in opciones:
             print(f"{key} - {opciones[key]}")
         print("0 - Salir")
@@ -42,7 +42,7 @@ def mostrar_menu():
         if eleccion == '0':
             break
         elif eleccion in opciones:
-            # Asegura que el path sea absoluto
+            # Asegurarse que el path sea absoluto
             ruta_script = os.path.join(ruta_base, opciones[eleccion])
             mostrar_codigo(ruta_script)
         else:
