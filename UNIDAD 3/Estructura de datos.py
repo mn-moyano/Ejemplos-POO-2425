@@ -27,10 +27,12 @@ class Inventario:
             print("Error: producto ya registrado.")
         else:
             self.productos[producto.id_producto] = producto
+            print("Producto registrado correctamente.")
 
     def eliminar_producto(self, id_producto):
         if id_producto in self.productos:
             del self.productos[id_producto]
+            print("Producto eliminado correctamente.")
         else:
             print("Error: producto no encontrado.")
 
@@ -40,6 +42,7 @@ class Inventario:
                 self.productos[id_producto].cantidad = cantidad
             if precio is not None:
                 self.productos[id_producto].precio = precio
+                print("Producto actualizado correctamente.")
         else:
             print("Error: producto no encontrado.")
 
