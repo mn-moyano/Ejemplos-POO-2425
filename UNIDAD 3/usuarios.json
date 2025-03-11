@@ -1,0 +1,14 @@
+{
+    "123": {
+        "nombre": "made25",
+        "id": "123",
+        "libros_prestados": [
+            {
+                "titulo": "Cien a\u00f1os de soledad",
+                "autor": "Gabriel Garc\u00eda M\u00e1rquez",
+                "categoria": "Novela",
+                "isbn": "9789876543210"
+            }
+        ]
+    }
+}
